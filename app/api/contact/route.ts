@@ -26,18 +26,17 @@ export async function POST(request: NextRequest) {
       This request was submitted through the RankRace Shopify SEO landing page.
     `
 
-    // In a real implementation, you would integrate with an email service like:
-    // - SendGrid
-    // - Mailgun
-    // - AWS SES
-    // - Resend
+import { Resend } from "resend"
 
-    // For now, we'll simulate the email sending
-    console.log("Email would be sent to: info@kashyapllc.com")
-    console.log("Email content:", emailContent)
+const resend = new Resend(process.env.RESEND_API_KEY)
 
-    // Simulate email sending delay
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+await resend.emails.send({
+  from: "RankRace Contact <noreply@rankrace.com>",
+  to: ["info@kashyapllc.com"],
+  subject: "New Shopify SEO Inquiry from RankRace",
+  text: emailContent,
+})
+
 
     return NextResponse.json({ message: "Contact form submitted successfully" }, { status: 200 })
   } catch (error) {
