@@ -24,22 +24,24 @@ export function ContactForm() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://formspree.io/f/mrbkozdr", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          websiteUrl: formData.websiteUrl,
+          contactName: formData.contactName,
+          email: formData.email,
+          message: formData.message,
+        })
       })
 
-      const data = await response.json()
-
-      if (!response.ok) {
-        console.error("❌ Submission error:", data.error || "Unknown error")
-        alert("There was an error submitting the form. Please try again.")
-      } else {
-        console.log("✅ Form submitted successfully")
+      if (response.ok) {
         setIsSubmitted(true)
+      } else {
+        console.error("❌ Submission failed:", await response.text())
+        alert("There was an error submitting the form. Please try again.")
       }
     } catch (err) {
       console.error("🔥 Unexpected error:", err)
