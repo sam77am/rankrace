@@ -23,15 +23,30 @@ export function ContactForm() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
 
-    // In a real implementation, you would send this data to your backend
-    // which would then send an email to info@kashyapllc.com
-    console.log("Form submitted:", formData)
+      const data = await response.json()
 
-    setIsSubmitted(true)
-    setIsSubmitting(false)
+      if (!response.ok) {
+        console.error("❌ Submission error:", data.error || "Unknown error")
+        alert("There was an error submitting the form. Please try again.")
+      } else {
+        console.log("✅ Form submitted successfully")
+        setIsSubmitted(true)
+      }
+    } catch (err) {
+      console.error("🔥 Unexpected error:", err)
+      alert("Unexpected error occurred. Please try again later.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
