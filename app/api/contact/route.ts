@@ -24,12 +24,12 @@ export async function POST(request: NextRequest) {
       ${message || "No additional message provided"}
     `
 
-const { error } = await resend.emails.send({
-  from: "RankRace <noreply@rankrace.com>", // now using your verified domain
-  to: "info@kashyapllc.com",
-  subject: "New Shopify SEO Inquiry",
-  text: emailContent,
-})
+    const { error } = await resend.emails.send({
+      from: "RankRace <noreply@rankrace.com>", // ✅ your verified domain
+      to: "info@kashyapllc.com",
+      subject: "New Shopify SEO Inquiry",
+      text: emailContent,
+    })
 
     if (error) {
       console.error("Email error:", error)
