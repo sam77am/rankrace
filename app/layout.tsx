@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       "Leading Shopify SEO agency with proven results. Our Shopify SEO experts increase organic traffic by 400%+ through specialized Shopify SEO services. Get your free SEO audit today!",
     images: [
       {
-        url: "/shopify-seo-og-image.png",
+        url: "/favicon.png",
         width: 1200,
         height: 630,
         alt: "RankRace Shopify SEO Services - Increase organic traffic by 400%+ with expert Shopify SEO",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description:
       "Get the best Shopify SEO strategies with proven 400% traffic growth. RankRace is the #1 Shopify SEO agency.",
     creator: "@rankrace",
-    images: ["/shopify-seo-og-image.png"],
+    images: ["/favicon.png"],
   },
 }
 
