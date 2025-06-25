@@ -1494,7 +1494,7 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li>
-                  <a href="/blogs" className="hover:text-indigo-400 transition-colors">
+                  <a href="/blog" className="hover:text-indigo-400 transition-colors">
                     Shopify SEO Blogs
                   </a>
                 </li>
