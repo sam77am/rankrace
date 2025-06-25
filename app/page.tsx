@@ -29,7 +29,10 @@ export default function HomePage() {
   return (
     
     <div className="min-h-screen bg-white">
-
+      
+      {/* ─────────────  GLOBAL HEADER  ───────────── */}
+      <Header />
+      
       <main>
         {/* Hero Section */}
         <section className="py-20 lg:py-32 bg-gradient-to-br from-indigo-50 via-white to-purple-50 relative overflow-hidden">
@@ -1379,7 +1382,10 @@ export default function HomePage() {
           </div>
         </section>
       </main>
-
+      
+      {/* ─────────────  GLOBAL FOOTER  ───────────── */}
+      <Footer />
+    
     </div>
   )
 }
