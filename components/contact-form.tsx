@@ -1,7 +1,6 @@
 "use client"
 
-import type React from "react"
-import { useState } from "react"
+import React, { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -16,46 +15,48 @@ export function ContactForm() {
     email: "",
     message: "",
   })
+
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    try {
-      const response = await fetch("https://formspree.io/f/mrbkozdr", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          websiteUrl: formData.websiteUrl,
-          contactName: formData.contactName,
-          email: formData.email,
-          message: formData.message,
-        })
-      })
-
-      if (response.ok) {
-        setIsSubmitted(true)
-      } else {
-        console.error("❌ Submission failed:", await response.text())
-        alert("There was an error submitting the form. Please try again.")
-      }
-    } catch (err) {
-      console.error("🔥 Unexpected error:", err)
-      alert("Unexpected error occurred. Please try again later.")
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
     }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: "f6b7e88c-10da-42f1-a2c7-c6ad82c6bea9",
+          websiteUrl: formData.websiteUrl,
+          name: formData.contactName,
+          email: formData.email,
+          message: formData.message,
+          subject: "New Shopify SEO Inquiry from RankRace",
+          from_name: "RankRace Contact Form",
+        }),
+      })
+
+      if (response.ok) {
+        setIsSubmitted(true)
+      } else {
+        console.error("❌ Submission failed:", await response.text())
+        alert("Submission failed. Please try again.")
+      }
+    } catch (error) {
+      console.error("🔥 Unexpected error:", error)
+      alert("An unexpected error occurred.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (isSubmitted) {
@@ -67,8 +68,7 @@ export function ContactForm() {
           </div>
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Thank You!</h3>
           <p className="text-gray-600 leading-relaxed">
-            Your message has been sent successfully. Our Shopify SEO experts will review your information and get back
-            to you within 24 hours with a customized strategy for your store.
+            Your message has been sent successfully. Our Shopify SEO experts will contact you within 24 hours.
           </p>
         </CardContent>
       </Card>
@@ -89,18 +89,18 @@ export function ContactForm() {
             <Label htmlFor="websiteUrl" className="text-sm font-semibold text-gray-900">
               Website URL *
             </Label>
-<Input
-  id="websiteUrl"
-  name="websiteUrl"
-  type="text"
-  placeholder="yourstore.myshopify.com"
-  value={formData.websiteUrl}
-  onChange={handleChange}
-  required
-  pattern="^(https?:\/\/)?([\w\-]+\.)+[\w\-]{2,}(\/[\w\-._~:/?#[\]@!$&'()*+,;=]*)?$"
-  title="Enter a valid website URL (e.g. yourstore.com or https://yourstore.com)"
-  className="border-2 border-gray-200 focus:border-indigo-500 rounded-lg"
-/>
+            <Input
+              id="websiteUrl"
+              name="websiteUrl"
+              type="text"
+              pattern="^(https?:\/\/)?([\w\-]+\.)+[\w\-]{2,}(\/[\w\-._~:/?#[\]@!$&'()*+,;=]*)?$"
+              title="Enter a valid website URL (e.g. yourstore.com or https://yourstore.com)"
+              placeholder="yourstore.myshopify.com"
+              value={formData.websiteUrl}
+              onChange={handleChange}
+              required
+              className="border-2 border-gray-200 focus:border-indigo-500 rounded-lg"
+            />
           </div>
 
           <div className="space-y-2">
