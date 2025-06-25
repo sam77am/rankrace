@@ -14,11 +14,11 @@ export function Header() {
 
   /** links that live in the centre nav */
   const nav = [
-    { href: "#services", label: "Shopify SEO Services" },
-    { href: "#about",    label: "About" },
-    { href: "#pricing",  label: "Pricing" },
-    { href: "#results",  label: "Results" },
-    { href: "#contact",  label: "Contact" },
+    { href: "/#services", label: "Shopify SEO Services" },
+    { href: "/#about",    label: "About" },
+    { href: "/#pricing",  label: "Pricing" },
+    { href: "/#results",  label: "Results" },
+    { href: "/#contact",  label: "Contact" },
   ] as const
 
   return (
