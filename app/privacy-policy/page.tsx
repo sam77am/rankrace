@@ -1,24 +1,31 @@
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
+import Header from "../../components/Header"
+import Footer from "../../components/Footer"
 
-export default function Page() {
+export default function PrivacyPolicyPage() {
   return (
     <>
       <Header />
-      <main className="max-w-3xl mx-auto px-4 py-12 space-y-6 text-gray-800">
-<h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
-<p>
-  We at RankRace, your privacy is important to us. This policy outlines how we collect, use, and protect your personal data when you visit our website or use our services.
-</p>
-<h2 className="text-2xl font-semibold mt-6">Information We Collect</h2>
-<p>We may collect personal information including your name, email, website URL, and any details you submit through forms.</p>
-<h2 className="text-2xl font-semibold mt-6">How We Use Your Information</h2>
-<p>We use your information to analyze and improve our SEO services, and to contact you for business purposes.</p>
-<h2 className="text-2xl font-semibold mt-6">Third-Party Sharing</h2>
-<p>We do not sell your data. We may share your info with service providers (like analytics or email providers) under strict data privacy agreements.</p>
-<h2 className="text-2xl font-semibold mt-6">Your Rights</h2>
-<p>You may contact us anytime to view, correct, or delete your personal data.</p>
-
+      <main className="max-w-3xl mx-auto px-4 py-12">
+        <h1 className="text-3xl font-bold mb-6 text-gray-900">Privacy Policy</h1>
+        <p className="mb-4 text-gray-700">
+          At RankRace, your privacy is our priority. We collect only necessary data to improve our services.
+        </p>
+        <p className="mb-4 text-gray-700">
+          <strong>Information Collected:</strong> We collect name, email, and website URL via our contact forms.
+        </p>
+        <p className="mb-4 text-gray-700">
+          <strong>Usage:</strong> This data is used for providing Shopify SEO consultations and to send relevant
+          information.
+        </p>
+        <p className="mb-4 text-gray-700">
+          <strong>Data Sharing:</strong> We do not sell or share your information with third parties.
+        </p>
+        <p className="mb-4 text-gray-700">
+          <strong>Security:</strong> We implement strong security practices to protect your data.
+        </p>
+        <p className="mb-4 text-gray-700">
+          If you have questions or concerns, please email us at info@rankrace.com.
+        </p>
       </main>
       <Footer />
     </>
