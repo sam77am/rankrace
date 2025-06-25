@@ -13,11 +13,11 @@ const nextConfig = {
     return [
       {
         source: '/blog',
-        destination: 'https://gtmhash.vercel.app/blog',
+        destination: 'https://rank-race-blog.vercel.app/blog',
       },
       {
         source: '/blog/:path*',
-        destination: 'https://gtmhash.vercel.app/blog/:path*',
+        destination: 'https://rank-race-blog.vercel.app/blog/:path*',
       },
     ];
   },
