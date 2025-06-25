@@ -1,31 +1,33 @@
-import Header from "@/components/Header"
-import Footer from "@/components/Footer"
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
 
 export default function PrivacyPolicyPage() {
   return (
     <>
       <Header />
       <main className="max-w-3xl mx-auto px-4 py-12">
-        <h1 className="text-3xl font-bold mb-6 text-gray-900">Privacy Policy</h1>
-        <p className="mb-4 text-gray-700">
-          At RankRace, your privacy is our priority. We collect only necessary data to improve our services.
+        <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
+        <p className="mb-4">
+          At RankRace, your privacy is important to us. This Privacy Policy outlines how we collect, use, and protect
+          your personal information.
         </p>
-        <p className="mb-4 text-gray-700">
-          <strong>Information Collected:</strong> We collect name, email, and website URL via our contact forms.
+        <h2 className="text-xl font-semibold mt-6 mb-2">Information We Collect</h2>
+        <p className="mb-4">
+          We may collect information such as your name, email address, website URL, and any message you submit via our forms.
         </p>
-        <p className="mb-4 text-gray-700">
-          <strong>Usage:</strong> This data is used for providing Shopify SEO consultations and to send relevant
-          information.
+        <h2 className="text-xl font-semibold mt-6 mb-2">How We Use Your Information</h2>
+        <p className="mb-4">
+          Your data is used solely for communication, analysis, and service improvement. We do not sell your information.
         </p>
-        <p className="mb-4 text-gray-700">
-          <strong>Data Sharing:</strong> We do not sell or share your information with third parties.
+        <h2 className="text-xl font-semibold mt-6 mb-2">Your Rights</h2>
+        <p className="mb-4">
+          You can request access, correction, or deletion of your data at any time by emailing us at info@kashyapllc.com.
         </p>
-        <p className="mb-4 text-gray-700">
-          <strong>Security:</strong> We implement strong security practices to protect your data.
+        <h2 className="text-xl font-semibold mt-6 mb-2">Changes</h2>
+        <p className="mb-4">
+          We may update this policy periodically. Changes will be posted on this page with a revised "last updated" date.
         </p>
-        <p className="mb-4 text-gray-700">
-          If you have questions or concerns, please email us at info@rankrace.com.
-        </p>
+        <p className="text-sm text-gray-500 mt-10">Last updated: June 2025</p>
       </main>
       <Footer />
     </>
