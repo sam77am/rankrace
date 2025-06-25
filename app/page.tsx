@@ -155,7 +155,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-3xl blur-3xl opacity-20 -z-10"></div>
                 <Image
-                  src="/shopify-seo-dashboard-hero.png"
+                  src="/Shopify-SEO-Services.png"
                   alt="Professional Shopify SEO dashboard showing organic traffic growth, keyword rankings, and revenue analytics for e-commerce stores optimized by RankRace SEO experts"
                   width={800}
                   height={600}
