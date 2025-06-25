@@ -1493,6 +1493,11 @@ export default function HomePage() {
                     Speed Optimization
                   </a>
                 </li>
+                <li>
+                  <a href="/blogs" className="hover:text-indigo-400 transition-colors">
+                    Shopify SEO Blogs
+                  </a>
+                </li>
               </ul>
             </div>
 
