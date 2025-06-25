@@ -89,16 +89,18 @@ export function ContactForm() {
             <Label htmlFor="websiteUrl" className="text-sm font-semibold text-gray-900">
               Website URL *
             </Label>
-            <Input
-              id="websiteUrl"
-              name="websiteUrl"
-              type="url"
-              placeholder="https://yourstore.myshopify.com"
-              value={formData.websiteUrl}
-              onChange={handleChange}
-              required
-              className="border-2 border-gray-200 focus:border-indigo-500 rounded-lg"
-            />
+<Input
+  id="websiteUrl"
+  name="websiteUrl"
+  type="text"
+  placeholder="yourstore.myshopify.com"
+  value={formData.websiteUrl}
+  onChange={handleChange}
+  required
+  pattern="^(https?:\/\/)?([\w\-]+\.)+[\w\-]{2,}(\/[\w\-._~:/?#[\]@!$&'()*+,;=]*)?$"
+  title="Enter a valid website URL (e.g. yourstore.com or https://yourstore.com)"
+  className="border-2 border-gray-200 focus:border-indigo-500 rounded-lg"
+/>
           </div>
 
           <div className="space-y-2">
