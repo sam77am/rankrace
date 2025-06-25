@@ -835,8 +835,8 @@ export default function HomePage() {
                 Problems We Solve
               </h2>
               <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                Many Shopify store owners struggle with platform-specific SEO challenges. Our{" "}
-                <strong>Shopify SEO experts</strong> identify and resolve these common issues that prevent stores from
+                Many Shopify store owners struggle with platform-specific SEO challenges. Our {" "}
+                <strong><a href = "https://rankrace.com/">Shopify SEO experts</a></strong> identify and resolve these common issues that prevent stores from
                 ranking well in search results.
               </p>
             </div>
@@ -1575,7 +1575,7 @@ export default function HomePage() {
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-gray-400 text-sm">
-                © 2024 RankRace. All rights reserved. Expert <strong>Shopify SEO services</strong> and{" "}
+                © 2024 RankRace. All rights reserved. Expert <strong><a href = "https://rankrace.com/">Shopify SEO services</a></strong> and{" "}
                 <strong>Shopify SEO</strong> solutions.
               </div>
               <div className="flex space-x-6 text-sm">
