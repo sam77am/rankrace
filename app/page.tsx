@@ -53,7 +53,7 @@ export default function HomePage() {
                   </h1>
                   <p className="text-xl text-gray-600 leading-relaxed">
                     As the leading <strong>Shopify SEO expert</strong>, we help e-commerce stores dominate search
-                    rankings with our proven <strong>Shopify SEO services</strong>. Increase organic traffic by 400%+
+                    rankings with our proven <strong>Shopify SEO services</strong>. Increase organic traffic by 120%+
                     and boost revenue through data-driven SEO strategies.
                   </p>
                 </div>
@@ -78,19 +78,19 @@ export default function HomePage() {
                 <div className="flex items-center space-x-8 pt-6">
                   <div className="text-center">
                     <div className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                      500+
+                      380+
                     </div>
                     <div className="text-sm text-gray-600 font-medium">Shopify Stores Optimized</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
-                      400%
+                      120%
                     </div>
                     <div className="text-sm text-gray-600 font-medium">Avg Traffic Increase</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                      $75M+
+                      $24M+
                     </div>
                     <div className="text-sm text-gray-600 font-medium">Revenue Generated</div>
                   </div>
@@ -287,7 +287,7 @@ export default function HomePage() {
                     <div className="p-3 bg-gradient-to-r from-indigo-100 to-purple-100 rounded-xl w-fit mx-auto mb-3">
                       <Users className="h-8 w-8 text-indigo-600" />
                     </div>
-                    <div className="text-2xl font-bold text-gray-900">500+</div>
+                    <div className="text-2xl font-bold text-gray-900">380+</div>
                     <div className="text-sm text-gray-600 font-medium">Shopify Stores</div>
                   </div>
                   <div className="text-center p-6 bg-white rounded-2xl shadow-lg border border-gray-100">
