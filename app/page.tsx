@@ -1556,7 +1556,7 @@ export default function HomePage() {
                 <li className="text-gray-400">
                   <strong className="text-white">Email:</strong>
                   <br />
-                  info@kashyapllc.com
+                  rankraceseo@gmail.com
                 </li>
                 <li className="text-gray-400">
                   <strong className="text-white">Response Time:</strong>
