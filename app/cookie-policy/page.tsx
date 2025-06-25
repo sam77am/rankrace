@@ -1,8 +1,24 @@
 /* app/cookie-policy/page.tsx */
-"use client"
 
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
+
+export const metadata = {
+  title: "Cookie Policy - RankRace",
+  description: "Learn how RankRace uses cookies and similar technologies to enhance your Shopify SEO experience and track performance.",
+  keywords: "RankRace cookies, SEO tracking, Shopify SEO cookies, cookie policy",
+  openGraph: {
+    title: "Cookie Policy - RankRace",
+    description: "Understand RankRace's use of cookies and analytics for performance and user experience optimization.",
+    url: "https://rankrace.com/cookie-policy",
+    siteName: "RankRace",
+  },
+  twitter: {
+    title: "Cookie Policy - RankRace",
+    description: "Details on RankRace’s use of cookies and web tracking technologies.",
+  },
+}
+
 
 export default function CookiePolicyPage() {
   return (
