@@ -1,8 +1,24 @@
 /* app/refund-policy/page.tsx */
-"use client"
 
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
+
+export const metadata = {
+  title: "Refund Policy - RankRace",
+  description: "View RankRace’s refund policy for Shopify SEO services, including eligibility criteria and refund timelines.",
+  keywords: "RankRace refund, Shopify SEO refund, SEO service cancellation, refund conditions",
+  openGraph: {
+    title: "Refund Policy - RankRace",
+    description: "Find out how refunds work for RankRace’s Shopify SEO packages, including when refunds are applicable.",
+    url: "https://rankrace.com/refund-policy",
+    siteName: "RankRace",
+  },
+  twitter: {
+    title: "Refund Policy - RankRace",
+    description: "See the terms of RankRace's refund process for SEO service cancellations.",
+  },
+}
+
 
 export default function RefundPolicyPage() {
   return (
