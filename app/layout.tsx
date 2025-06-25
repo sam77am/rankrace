@@ -54,12 +54,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" dir="ltr" data-theme="light">
       <head>
-        {/* Extra favicon links for full compatibility */}
+        {/* Favicons */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="shortcut icon" href="/favicon.ico" />
+
+        {/* JSON-LD Organization Schema */}
+        <script type="application/ld+json" suppressHydrationWarning>
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "RankRace",
+            url: "https://rankrace.com",
+            logo: "https://rankrace.com/favicon.png",
+            sameAs: [
+              "https://www.linkedin.com/company/rankrace",
+              "https://twitter.com/rankraceseo"
+            ],
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+1-3028034764",
+              contactType: "Customer Service",
+              areaServed: "US",
+              availableLanguage: ["English"]
+            }
+          })}
+        </script>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
