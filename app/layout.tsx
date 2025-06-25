@@ -52,7 +52,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr" data-theme="light">
       <head>
         {/* Extra favicon links for full compatibility */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
