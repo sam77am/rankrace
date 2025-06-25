@@ -283,7 +283,7 @@ export default function HomePage() {
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-2xl blur-2xl opacity-20 -z-10"></div>
                   <Image
-                    src="/placeholder.svg?height=400&width=500"
+                    src="/RankRace-for-Shopify-SEO.png?height=400&width=500"
                     alt="Shopify SEO experts working on store optimization"
                     width={500}
                     height={400}
