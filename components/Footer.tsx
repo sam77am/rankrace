@@ -24,11 +24,11 @@ export function Footer() {
             <h3 className="text-white font-bold mb-6">Shopify SEO Services</h3>
             <ul className="space-y-3">
               {[
-                ["#services","Technical SEO Audit"],
-                ["#services","Keyword Research"],
-                ["#services","Product Page Optimization"],
-                ["#services","Content Marketing"],
-                ["#services","Speed Optimization"],
+                ["/#services","Technical SEO Audit"],
+                ["/#services","Keyword Research"],
+                ["/#services","Product Page Optimization"],
+                ["/#services","Content Marketing"],
+                ["/#services","Speed Optimization"],
                 ["/blog",    "Shopify SEO Blogs"],
               ].map(([href,label]) => (
                 <li key={href}>
@@ -44,10 +44,10 @@ export function Footer() {
             <h3 className="text-white font-bold mb-6">Company</h3>
             <ul className="space-y-3">
               {[
-                ["#about","About RankRace"],
-                ["#results","Case Studies"],
-                ["#pricing","Pricing"],
-                ["#contact","Contact"],
+                ["/#about","About RankRace"],
+                ["/#results","Case Studies"],
+                ["/#pricing","Pricing"],
+                ["/#contact","Contact"],
               ].map(([href,label]) => (
                 <li key={href}>
                   <a
@@ -90,7 +90,7 @@ export function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm text-center md:text-left">
-              © 2024 RankRace. All rights reserved.
+              © 2025 RankRace. All rights reserved.
               Expert&nbsp;
               <a href="https://rankrace.com/" className="hover:text-indigo-400">
                 Shopify SEO&nbsp;services
