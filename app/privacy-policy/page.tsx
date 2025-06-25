@@ -3,23 +3,24 @@ import { RankRaceLogo } from "@/components/logo"
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex flex-col min-h-screen bg-white text-gray-800">
       {/* Header */}
-      <header className="border-b bg-white">
+      <header className="border-b">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" aria-label="RankRace logo">
             <RankRaceLogo />
-            <span className="text-xl font-semibold text-gray-800">RankRace</span>
           </Link>
-          <nav className="space-x-4 text-sm text-gray-600">
-            <Link href="/">Home</Link>
+          <nav className="space-x-6 text-sm font-medium text-gray-600">
             <Link href="/#services">Services</Link>
+            <Link href="/#process">Process</Link>
+            <Link href="/#pricing">Pricing</Link>
+            <Link href="/#faq">FAQs</Link>
             <Link href="/#contact">Contact</Link>
           </nav>
         </div>
       </header>
 
-      {/* Main content */}
+      {/* Main Content */}
       <main className="flex-grow max-w-3xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
         <p className="mb-4">
@@ -42,8 +43,15 @@ export default function PrivacyPolicyPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-100 py-6 text-sm text-gray-500 text-center">
-        &copy; {new Date().getFullYear()} RankRace. All rights reserved.
+      <footer className="bg-gray-950 text-gray-400 text-sm py-8">
+        <div className="max-w-6xl mx-auto px-4 text-center space-y-3">
+          <div className="space-x-4">
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/terms-of-service">Terms of Service</Link>
+            <Link href="/cookie-policy">Cookie Policy</Link>
+          </div>
+          <div>&copy; {new Date().getFullYear()} RankRace. All rights reserved.</div>
+        </div>
       </footer>
     </div>
   )
