@@ -2,9 +2,28 @@
 
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
-import { CheckCircle } from "lucide-react"
+
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import {
+CheckCircle,
+TrendingUp,
+Search,
+ShoppingCart,
+Users,
+Award,
+ArrowRight,
+BarChart3,
+Target,
+Zap,
+Rocket,
+Crown,
+} from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
+import { RankRaceLogo } from "@/components/logo"
+import { ContactForm } from "@/components/contact-form"
+
 
 export default function HomePage() {
   return (
