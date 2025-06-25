@@ -5,9 +5,20 @@ import { Footer } from "@/components/Footer"
 
 export const metadata = {
   title: "Privacy Policy - RankRace",
-  description:
-    "Learn how RankRace collects, uses, and protects your personal information when you use our Shopify SEO services.",
+  description: "Understand how RankRace collects, uses, and protects your personal information when you use our Shopify SEO services.",
+  keywords: "RankRace Privacy Policy, Shopify SEO privacy, data collection SEO, Shopify data usage",
+  openGraph: {
+    title: "Privacy Policy - RankRace",
+    description: "Understand how RankRace collects and protects your personal information during Shopify SEO services.",
+    url: "https://rankrace.com/privacy-policy",
+    siteName: "RankRace",
+  },
+  twitter: {
+    title: "Privacy Policy - RankRace",
+    description: "Our commitment to data protection in delivering Shopify SEO services.",
+  },
 }
+
 
 export default function PrivacyPolicyPage() {
   return (
