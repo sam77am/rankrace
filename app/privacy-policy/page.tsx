@@ -4,11 +4,6 @@
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 
-export const metadata = {
-  title: "Privacy Policy | RankRace",
-  description: "Understand how RankRace collects, uses, and protects your personal information.",
-}
-
 export default function PrivacyPolicyPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white text-gray-800">
