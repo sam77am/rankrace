@@ -1,5 +1,8 @@
-import type React from "react"
+import "./globals.css"
 import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "RankRace - #1 Shopify SEO Expert | Shopify SEO Services",
@@ -17,6 +20,7 @@ export const metadata: Metadata = {
       { url: "/favicon.png", sizes: "16x16", type: "image/png" },
     ],
     apple: [{ url: "/favicon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.png",
   },
   openGraph: {
     type: "website",
@@ -31,36 +35,27 @@ export const metadata: Metadata = {
         url: "/shopify-seo-og-image.png",
         width: 1200,
         height: 630,
-        alt: "RankRace Shopify SEO Services - Increase organic traffic by 400%+ with expert Shopify SEO optimization",
+        alt: "RankRace Shopify SEO Services - Increase organic traffic by 400%+ with expert Shopify SEO",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "RankRace - #1 Shopify SEO Expert | Shopify SEO Services That Drive Results",
+    title: "RankRace - #1 Shopify SEO Expert",
     description:
-      "Leading Shopify SEO agency with proven results. Our Shopify SEO experts increase organic traffic by 400%+ through specialized Shopify SEO services.",
+      "Get the best Shopify SEO strategies with proven 400% traffic growth. RankRace is the #1 Shopify SEO agency.",
+    creator: "@rankrace",
     images: ["/shopify-seo-og-image.png"],
-    creator: "@RankRace",
   },
-  alternates: {
-    canonical: "https://rankrace.com",
-  },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.png" />
+        <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png" />
       </head>
-      <body>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }
-
-
-import './globals.css'
