@@ -302,7 +302,7 @@ export default function HomePage() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-3xl blur-3xl opacity-20 -z-10"></div>
                 <Image
-                  src="/placeholder.svg?height=500&width=600"
+                  src="/ShopifySEOExpertAgency.png?height=500&width=600"
                   alt="Shopify SEO experts analyzing store performance and search rankings"
                   width={600}
                   height={500}
@@ -400,7 +400,7 @@ export default function HomePage() {
                 </div>
                 <div className="relative">
                   <Image
-                    src="/placeholder.svg?height=400&width=500"
+                    src="/Shopify-SEO-challenges.png?height=400&width=500"
                     alt="Shopify SEO challenges and solutions diagram"
                     width={500}
                     height={400}
@@ -582,7 +582,7 @@ export default function HomePage() {
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-r from-red-400 to-orange-400 rounded-2xl blur-2xl opacity-20 -z-10"></div>
                   <Image
-                    src="/placeholder.svg?height=400&width=500"
+                    src="/E-commerce-store-losing-revenue.png?height=400&width=500"
                     alt="E-commerce store losing revenue without Shopify SEO optimization"
                     width={500}
                     height={400}
@@ -712,7 +712,7 @@ export default function HomePage() {
                     <div className={`relative ${index % 2 === 1 ? "lg:order-1" : ""}`}>
                       <div className="absolute inset-0 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-2xl blur-2xl opacity-20 -z-10"></div>
                       <Image
-                        src="/placeholder.svg?height=400&width=500"
+                        src="/Shopify-SEO-process.png?height=400&width=500"
                         alt={`${process.title} - Shopify SEO process step ${process.step}`}
                         width={500}
                         height={400}
@@ -1231,7 +1231,7 @@ export default function HomePage() {
                   <CardHeader className="pb-4">
                     <div className="relative">
                       <Image
-                        src="/placeholder.svg?height=200&width=300"
+                        src="/Shopify-SEO-case study.png?height=200&width=300"
                         alt={`${result.store} Shopify SEO case study showing traffic and revenue growth`}
                         width={300}
                         height={200}
