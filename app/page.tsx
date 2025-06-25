@@ -1582,10 +1582,10 @@ export default function HomePage() {
                 <a href="/privacy-policy" className="hover:text-indigo-400 transition-colors">
                   Privacy Policy
                 </a>
-                <a href="/refund-policy" className="hover:text-indigo-400 transition-colors">
+                <a href="/terms-of-service" className="hover:text-indigo-400 transition-colors">
                   Terms of Service
                 </a>
-                <a href="/terms-of-service" className="hover:text-indigo-400 transition-colors">
+                <a href="/cookie-policy" className="hover:text-indigo-400 transition-colors">
                   Cookie Policy
                 </a>
                 <a href="/refund-policy" className="hover:text-indigo-400 transition-colors">
