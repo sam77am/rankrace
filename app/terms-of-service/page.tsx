@@ -1,8 +1,24 @@
 /* app/terms-of-service/page.tsx */
-"use client"
 
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
+
+export const metadata = {
+  title: "Terms of Service - RankRace",
+  description: "Read the terms and conditions for using RankRace's Shopify SEO services, including responsibilities, payments, limitations, and service agreements.",
+  keywords: "RankRace Terms, Shopify SEO terms, SEO service agreement, RankRace policies",
+  openGraph: {
+    title: "Terms of Service - RankRace",
+    description: "Review the legal terms and service conditions for engaging RankRace as your Shopify SEO provider.",
+    url: "https://rankrace.com/terms-of-service",
+    siteName: "RankRace",
+  },
+  twitter: {
+    title: "Terms of Service - RankRace",
+    description: "Understand the conditions and scope of RankRace’s Shopify SEO services.",
+  },
+}
+
 
 export default function TermsOfServicePage() {
   return (
